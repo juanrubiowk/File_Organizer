@@ -1,0 +1,29 @@
+# .gitignore
+
+# Archivos de log generados automáticamente al ejecutar el programa.
+# No tiene sentido subirlos a Git: se regeneran solos y cada usuario
+# tendrá su propio historial de ejecuciones.
+logs/*.log
+
+# Carpetas que Python crea automáticamente al importar módulos,
+# con el bytecode compilado (.pyc). Son basura de caché, no código fuente.
+__pycache__/
+*.pyc
+
+# Carpetas típicas de entornos virtuales, por si más adelante
+# creas uno con "python -m venv venv" para aislar las dependencias.
+venv/
+.venv/
+env/
+
+# Carpeta que crea pytest para guardar caché entre ejecuciones de tests.
+.pytest_cache/
+
+# Archivos de configuración de editores/IDEs que son específicos
+# de tu ordenador, no del proyecto en sí.
+.vscode/
+.idea/
+
+# Archivos que macOS crea automáticamente en cada carpeta (metadatos
+# del Finder). No tienen ninguna utilidad fuera de tu propio Mac.
+.DS_Store
